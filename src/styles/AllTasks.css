@@ -1,0 +1,70 @@
+.all-tasks {
+  color: #f4f4f4;
+  padding: 1rem;
+  width: fit-content;
+}
+.all-tasks h2 {
+  font-size: 2rem;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+
+.all-tasks ul {
+  margin-left: 2rem;
+}
+
+.all-tasks ul li {
+  list-style: circle;
+  font-size: 1.5rem;
+  font-weight: 300;
+  cursor: pointer;
+  width: max-content;
+  margin-top: 0.5rem;
+  position: relative;
+}
+.all-tasks ul li::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 1.5px;
+  background: #f4f4f4b5;
+  transform: scaleX(0);
+  transition: all 250ms ease-in-out;
+}
+.all-tasks ul li:hover::before {
+  transform: scaleX(1);
+  transform-origin: right;
+  width: 100%;
+}
+.all-tasks form {
+  position: relative;
+  margin-top: 2rem;
+  display: flex;
+}
+
+.all-tasks form label {
+  position: absolute;
+  left: -99999px;
+}
+
+.all-tasks form button {
+  background: none;
+  border: none;
+  font-family: inherit;
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: inherit;
+  padding-right: 1rem;
+  cursor: pointer;
+}
+
+.all-tasks form input {
+  width: 80%;
+  outline: none;
+  font-size: 1.5rem;
+  background: transparent;
+  border: none;
+  color: inherit;
+  border-bottom: 2px solid #f4f4f4;
+}

@@ -1,0 +1,27 @@
+.delete-stuff {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  margin-top: 0.5em;
+  /* margin-bottom: 5em; */
+}
+.btn-delete {
+  font-size: clamp(1.2rem, 2vw, 1.5rem);
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  cursor: pointer;
+  transition: transform 250ms ease-in-out, color 500ms ease-in-out;
+}
+.btn-delete:hover {
+  color: #064eba;
+  transform: scale(1.05);
+}
+
+@media (max-width: 40em) {
+  .delete-stuff {
+    margin-top: 1em;
+    margin-bottom: 5em;
+  }
+}
